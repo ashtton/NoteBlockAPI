@@ -78,11 +78,11 @@ public class NoteBlockPlayerMain {
 	}
 
 	public void doSync(Runnable runnable) {
-		Bukkit.getServer().getScheduler().runTask(NoteBlockAPI.getAPI(), runnable);
+		Bukkit.getServer().getScheduler().runTask(NoteBlockAPI.getPlugin(), runnable);
 	}
 
 	public void doAsync(Runnable runnable) {
-		Bukkit.getServer().getScheduler().runTaskAsynchronously(NoteBlockAPI.getAPI(), runnable);
+		Bukkit.getServer().getScheduler().runTaskAsynchronously(NoteBlockAPI.getPlugin(), runnable);
 	}
 
 	public boolean isDisabling() {
